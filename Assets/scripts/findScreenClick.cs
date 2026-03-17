@@ -18,7 +18,7 @@ public class findScreenClick : MonoBehaviour
             touch = Input.GetTouch(0);
             //Debug.Log(touch.position);
             touchWorldCoords = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x,touch.position.y,Camera.main.nearClipPlane + 10f));
-            Debug.Log(touchWorldCoords);
+            //Debug.Log(touchWorldCoords);
         }
     }
 
