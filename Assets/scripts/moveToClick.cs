@@ -8,18 +8,16 @@ public class moveToClick : MonoBehaviour
     void Start()
     {
         thisTransform = this.transform;
+        findScreenClick.findScreenClickInstance.SetPlayerTransform(thisTransform);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(findScreenClick.findScreenClickInstance.GetClickPosition());
-        Vector2 target = findScreenClick.findScreenClickInstance.GetClickPosition();
-        if (thisTransform.position.x != target.x && thisTransform.position.y != target.y)
+        Vector3 target = findScreenClick.findScreenClickInstance.GetClickPosition();
+        if (Vector3.Distance(target,thisTransform.position) > 0.3)
         {
             thisTransform.position += new Vector3((target.x - thisTransform.position.x), (target.y - thisTransform.position.y), 0).normalized * Time.deltaTime * speed;
-            //thisTransform.LookAt(target);
-            //thisTransform.position += this.thisTransform.forward * Time.deltaTime * speed;
         }
     }
 }

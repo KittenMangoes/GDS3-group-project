@@ -11,6 +11,12 @@ public class findScreenClick : MonoBehaviour
         findScreenClickInstance = this;
     }
 
+    Transform playerTransform;
+    public void SetPlayerTransform(Transform player)
+    {
+        playerTransform = player;
+    }
+
     void Update()
     {
         if (Input.touchCount > 0)
@@ -24,6 +30,11 @@ public class findScreenClick : MonoBehaviour
 
     public Vector3 GetClickPosition()
     {
-        return new Vector2(touchWorldCoords.x, touchWorldCoords.y);
+        return new Vector3(touchWorldCoords.x, touchWorldCoords.y, 0);
+    }
+
+    public Vector3 GetPlayerPosition()
+    {
+        return playerTransform.position;
     }
 }

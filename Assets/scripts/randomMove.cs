@@ -7,7 +7,8 @@ public class randomMove : MonoBehaviour
 {
     public Vector2 target;
     Transform thisTransform;
-    float speed = 5.5f;
+    float speed = 5f;
+    public int canMove = 1;//0 means it cant move, when clicked to stop
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,12 +20,18 @@ public class randomMove : MonoBehaviour
     {
         if (Mathf.Round(thisTransform.position.x) != Mathf.Round(target.x) && Mathf.Round(thisTransform.position.y) != Mathf.Round(target.y))
         {
-            thisTransform.position += new Vector3((target.x - thisTransform.position.x), (target.y - thisTransform.position.y), 0).normalized * Time.deltaTime * speed;
+            thisTransform.position += new Vector3((target.x - thisTransform.position.x), (target.y - thisTransform.position.y), 0).normalized * Time.deltaTime * speed * canMove;
         }
         else//at the target location
         {
             newTarget();
             //Debug.Log(target);
+        }
+
+        Vector3 clickPosition = findScreenClick.findScreenClickInstance.GetClickPosition();
+        if (Vector3.Distance(clickPosition, thisTransform.position) < 0.5 && Input.touchCount > 0)
+        {
+            canMove = 0;
         }
     }
     void newTarget()
