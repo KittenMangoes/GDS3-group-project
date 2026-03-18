@@ -29,7 +29,7 @@ public class randomMove : MonoBehaviour
         }
 
         Vector3 clickPosition = findScreenClick.findScreenClickInstance.GetClickPosition();
-        if (Vector3.Distance(clickPosition, thisTransform.position) < 0.5 && Input.touchCount > 0)
+        if (Vector3.Distance(clickPosition, thisTransform.position) < 0.6 && Input.touchCount > 0)
         {
             canMove = 0;
         }

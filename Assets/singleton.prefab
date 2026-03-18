@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5228389243449800366}
   - component: {fileID: -759625781407156585}
+  - component: {fileID: 8371116588392193368}
   m_Layer: 0
   m_Name: singleton
   m_TagString: Untagged
@@ -42,5 +43,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00cd7a0defc523b418f4f7f29c64a828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchWorldCoords: {x: 0, y: 0, z: 0}
+--- !u!114 &8371116588392193368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5606419175564768313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1673b0c3d71dd8944adffbc88125ef3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
