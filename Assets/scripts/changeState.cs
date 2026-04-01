@@ -15,7 +15,5 @@ public class changeState : MonoBehaviour
     {
         int level = scoreManager.scoreManagerInstance.GetScore();
         animator.SetInteger("level", level);
-        Debug.Log(level);
-        Debug.Log(animator.GetInteger("level"));
     }
 }
