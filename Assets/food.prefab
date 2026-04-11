@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2926309651618926348}
   - component: {fileID: 6358175134455059906}
   - component: {fileID: 2590658967902992046}
+  - component: {fileID: -8926224137997379893}
+  - component: {fileID: -2041601651065466610}
   m_Layer: 0
   m_Name: food
   m_TagString: Untagged
@@ -124,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0}
+  canMove: 1
 --- !u!114 &2590658967902992046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +139,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e96828e05004342932a4afc0ffeaff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canEat: 1
+--- !u!114 &-8926224137997379893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6663795786023411013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f61d68a93cb644483961445a62f7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: -2041601651065466610}
+--- !u!95 &-2041601651065466610
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6663795786023411013}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fadfd57c346399442bdb6a5701bd309a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
