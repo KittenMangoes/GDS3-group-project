@@ -1,0 +1,7 @@
+I have been making changes using the animator component and I'm not sure if its being sent through fork. so I will write in my changes here to compare.
+
+2/4/26
+changed "level" in the player animator from a float to an int since the code refers to it as an int
+
+11/4/26
+gave the food prefab their own version of the growth animation so it will be put individually onto each food, then gave them the same "level" as the player so it can also grow each stage.
