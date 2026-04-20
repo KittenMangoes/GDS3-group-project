@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4362953473808301465}
+  - component: {fileID: 2700569872855679186}
+  - component: {fileID: -3550400918308375199}
   m_Layer: 0
   m_Name: singleton
   m_TagString: Untagged
@@ -31,3 +33,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2700569872855679186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879211646043526596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cd7a0defc523b418f4f7f29c64a828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchWorldCoords: {x: 0, y: 0, z: 0}
+--- !u!114 &-3550400918308375199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879211646043526596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1673b0c3d71dd8944adffbc88125ef3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
