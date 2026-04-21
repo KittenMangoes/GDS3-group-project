@@ -37,4 +37,9 @@ public class findScreenClick : MonoBehaviour
     {
         return playerTransform.position;
     }
+
+    public void ChangeTouchPosition(Vector3 newTarget)
+    {
+        touchWorldCoords = newTarget;
+    }
 }
