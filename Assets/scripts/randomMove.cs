@@ -28,11 +28,8 @@ public class randomMove : MonoBehaviour
             //Debug.Log(target);
         }
 
-        Vector3 clickPosition = findScreenClick.findScreenClickInstance.GetClickPosition();
-        if (Vector3.Distance(clickPosition, thisTransform.position) < 0.6 && Input.touchCount > 0)
-        {
-            canMove = 0;
-        }
+        MoveCheck();
+
     }
     void newTarget()
     {
@@ -40,5 +37,19 @@ public class randomMove : MonoBehaviour
         float tempTargety = Random.Range(0, Screen.height);
         Vector3 tempScreenConvert = Camera.main.ScreenToWorldPoint(new Vector3(tempTargetx, tempTargety, Camera.main.nearClipPlane + 10f));
         target = new Vector2(tempScreenConvert.x, tempScreenConvert.y);
+    }
+
+    private void MoveCheck()
+    {
+        Vector3 clickPosition = findScreenClick.findScreenClickInstance.GetClickPosition();
+        if (Vector3.Distance(clickPosition, thisTransform.position) < 0.6 && Input.touchCount > 0)//if the food gets clicked on
+        {
+            canMove = 0;//stop moving
+        }
+
+        if (this.GetComponent<getEaten>().canEat ==  false)//this means the food has been eaten so it can start moving again
+        {
+            canMove = 1;//can move again
+        }
     }
 }

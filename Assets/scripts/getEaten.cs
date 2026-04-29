@@ -21,7 +21,6 @@ public class getEaten : MonoBehaviour
             canEat = false;
             scoreManager.scoreManagerInstance.IncreaseScore();
             this.GetComponent<MeshRenderer>().enabled = false;
-            this.GetComponent<randomMove>().canMove = 1;//can move again
             StartCoroutine(RespawnWait());
         }
     }
