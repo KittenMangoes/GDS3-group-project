@@ -1,0 +1,2 @@
+The textures look a bit weird but I assure you they work.
+I packed the texture of all 4 branches in to the same texture, so you only have to make 1 material for all 4 branch and it will be mapped correctly. 
