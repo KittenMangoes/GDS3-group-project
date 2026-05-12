@@ -16,7 +16,7 @@ public class getEaten : MonoBehaviour
     void Update()
     {
         Vector3 playerPosition = findScreenClick.findScreenClickInstance.GetPlayerPosition();
-        if(Vector3.Distance(playerPosition, thisTransform.position) < 0.6 && canEat)
+        if(Vector3.Distance(playerPosition, thisTransform.position) < 0.8 && canEat)
         {
             canEat = false;
             scoreManager.scoreManagerInstance.IncreaseScore();
