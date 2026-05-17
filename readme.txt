@@ -4,7 +4,8 @@ Aisya Ariff Syah s4169162
 Sebastian Moutray-Read s4155192
 Biru Laut s4065979
 
-The game's main scene is MilestoneBuild.
+The game is yet to be tested on touchscreen hardware.
+
 Tap the screen (click in simulator view) to move around.
 Move towards algae to eat it.
 Eat enough algae and turn into the next stage in a frog's life cycle.
