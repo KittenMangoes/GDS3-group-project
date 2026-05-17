@@ -4,7 +4,10 @@ Aisya Ariff Syah s4169162
 Sebastian Moutray-Read s4155192
 Biru Laut s4065979
 
-tap the screen (click in simulator view) to move the tadpole, click on the algae to eat it, once you eat enough you will grow bigger.
+The game's main scene is MilestoneBuild.
+Tap the screen (click in simulator view) to move around.
+Move towards algae to eat it.
+Eat enough algae and turn into the next stage in a frog's life cycle.
 
-I didn't use any tools for the programming inside of unity. 
-the 3d modeling was done in blender, with no external assets used.
+We didn't use any tools for the programming inside of Unity. 
+The 3D modeling was done in blender, with no external assets used.
