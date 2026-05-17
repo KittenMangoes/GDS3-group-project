@@ -1,5 +1,8 @@
+
+#if UNITY_EDITOR
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
+#endif
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 
