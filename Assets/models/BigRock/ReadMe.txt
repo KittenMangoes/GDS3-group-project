@@ -1,0 +1,1 @@
+The no Moss variation and the mossed variation only has a base color difference.
